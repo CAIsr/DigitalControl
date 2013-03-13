@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Digital Control' target in the 'Digital Control' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
