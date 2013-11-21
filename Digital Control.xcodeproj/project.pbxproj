@@ -46,6 +46,7 @@
 		666402F41834727A002567CA /* ImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666402E718347185002567CA /* ImageController.m */; };
 		666402F51834727F002567CA /* initCameraValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 666402E9183471B3002567CA /* initCameraValue.m */; };
 		666402F618347282002567CA /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666402EB183471B3002567CA /* PreferencesController.m */; };
+		6694D93B183DE90B009883E2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6694D93A183DE90B009883E2 /* README.md */; };
 		6695A7EE175EFCFA00B556F8 /* cameraTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6695A7ED175EFCFA00B556F8 /* cameraTypeController.m */; };
 		6695A8E31766E9A100B556F8 /* USBDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6695A8E21766E9A100B556F8 /* USBDetection.m */; };
 		BF56EFA616F2DD5D00F21CF8 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF56EFA516F2DD5D00F21CF8 /* Quartz.framework */; };
@@ -107,6 +108,7 @@
 		666402EA183471B3002567CA /* PreferencesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PreferencesController.h; path = Preferences/PreferencesController.h; sourceTree = "<group>"; };
 		666402EB183471B3002567CA /* PreferencesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PreferencesController.m; path = Preferences/PreferencesController.m; sourceTree = "<group>"; };
 		666402EC1834720B002567CA /* dump_param_new.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dump_param_new.txt; path = Resources/dump_param_new.txt; sourceTree = "<group>"; };
+		6694D93A183DE90B009883E2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		6695A7EC175EFCFA00B556F8 /* cameraTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cameraTypeController.h; sourceTree = "<group>"; };
 		6695A7ED175EFCFA00B556F8 /* cameraTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cameraTypeController.m; sourceTree = "<group>"; };
 		6695A8E11766E9A100B556F8 /* USBDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBDetection.h; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		BFB0CD2E16F039ED00FFC51C /* Digital Control */ = {
 			isa = PBXGroup;
 			children = (
+				6694D93A183DE90B009883E2 /* README.md */,
 				BFB0CD5116F15F2A00FFC51C /* GUI */,
 				BFB0CD4516F03A0000FFC51C /* Digital Control.entitlements */,
 				BFB0CD2F16F039ED00FFC51C /* Supporting Files */,
@@ -397,6 +400,7 @@
 				666402D718347125002567CA /* ZoomIn.tif in Resources */,
 				666402D818347125002567CA /* ZoomOut.tif in Resources */,
 				666402ED1834720B002567CA /* dump_param_new.txt in Resources */,
+				6694D93B183DE90B009883E2 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
