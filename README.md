@@ -1,7 +1,7 @@
 Digital Control (Mac)
 =============
 
-Digital Remote Control Application is an open source MAC application which allows the user to take control of photography remotely. The original idea of this application is for serial block-face imaging (generate high resolution three-dimensional images from brain sample) but the application is not limited to other purpose. This application required a server which is also developed by Centre for Advanced Imaging. Please refer to following link (BananaCam): https://github.com/OliverNicolini/BananaCam
+Digital Remote Control Application is an open source MAC application which allows the user to take control of photography remotely. The original idea of this application is for serial block-face imaging (generate high resolution three-dimensional images from brain sample) but the application is not limited to other purpose. This application required a server which is also developed by Centre for Advanced Imaging. Please refer to following link (Digital Control Server): https://github.com/NIF-au/DigitalControlServer
 <BR/><BR/>
 Note: Current version is only supported by USB 2.0. There is an issue with USB 3.0 (libusb support issue in BananaCam). In order to make it works, please connect your Camera to your computer using USB 2.0 then run BananaCam before start up Digital Control.
 
