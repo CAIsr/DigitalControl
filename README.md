@@ -14,6 +14,12 @@ The interface contents several key environments. Centre penal is a main control 
 
 Remotely: 
     Using the USB 2.0 for select models (1700 models supported and be found in http://www.gphoto.org/proj/libgphoto2/support.php), Digital Control enables you to capture unique images no matter what the subject. The current development has only been tested with Nikon and Canon cameras.
-<BR/>
+<BR/><BR/>
 LiveView Support: 
     Live previews direct from the camera are supported on selected cameras when this feature is enabled. See what you are about to shoot! 
+
+## Dependency
+The software depends on the following libraries:
+	libgphoto2 and libusb
+with frameworks:
+	IOKit; CoreFundation; QTKit and OpenGL
