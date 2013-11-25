@@ -8,7 +8,7 @@ Note: Current version is only supported by USB 2.0. There is an issue with USB 3
 ## Interface
 The interface contents several key environments. Centre penal is a main control interface for cameras. It contents base control and liveview support. Left penal is a message (log) penal. It provides information and log to users while triggering any camera functions. Right penal is a file and image viewer. It shows image location and provides based image editor. 
 <BR/>
-<IMG SRC="https://dl.dropboxusercontent.com/u/24447938/DigitalControl.png" ALT="DigitalControl" WIDTH=600 HEIGHT=350>
+<IMG SRC="https://dl.dropboxusercontent.com/u/24447938/DigitalControl.png" ALT="DigitalControl" WIDTH=600 HEIGHT=380>
 
 ## Functions
 
@@ -19,7 +19,7 @@ LiveView Support:
     Live previews direct from the camera are supported on selected cameras when this feature is enabled. See what you are about to shoot! 
 
 ## Dependency
-The software depends on the following libraries:
-	libgphoto2 and libusb
-with frameworks:
+The software depends on the following libraries:<BR/>
+	libgphoto2 and libusb<BR/>
+with frameworks:<BR/>
 	IOKit; CoreFundation; QTKit and OpenGL
