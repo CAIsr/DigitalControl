@@ -23,3 +23,7 @@ The software depends on the following libraries:<BR/>
 	libgphoto2 and libusb<BR/>
 with frameworks:<BR/>
 	IOKit; CoreFundation; QTKit and OpenGL
+
+## Built File
+If you don't have xcode installed in your Mac, there is a built file (Mac App) in root direction called: "Digital Control_v1.0". Double check to start the application.
+
