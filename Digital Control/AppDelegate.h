@@ -87,6 +87,12 @@
     NSButton *btFocusBottom;
     NSButton *btFocusBottomRight;
     NSButton *btFocusBottomLeft;
+    
+    // tray correction reminder
+    NSTextField *vertical_number;
+    NSTextField *horizontal_number;
+    NSString    *save_tray;
+    NSTextField *rotating_number;
 }
 
 @property (nonatomic, retain) IBOutlet NSWindow *window;
@@ -133,10 +139,10 @@
 @property (nonatomic, retain) CommSocketClient *socket_data;
 @property (nonatomic, retain) cameraTypeController *checkCameraType;
 @property (nonatomic, retain) NSMutableArray *fulldetails;
-@property (nonatomic, retain) NSString *fullvalues;
-@property (nonatomic, retain) NSString *fullmessages;
-@property (nonatomic, retain) NSString *fullcurrentvalue;
-@property (nonatomic, retain) NSData *fullLiveViewData;
+@property (nonatomic, retain) NSString  *fullvalues;
+@property (nonatomic, retain) NSString  *fullmessages;
+@property (nonatomic, retain) NSString  *fullcurrentvalue;
+@property (nonatomic, retain) NSData    *fullLiveViewData;
 
 // Top feilds
 @property (nonatomic, retain) IBOutlet NSTextField *cameraName;
@@ -157,6 +163,13 @@
 //KeyDown to capture
 @property (nonatomic, retain) IBOutlet NSButton *keyDownCapture;
 
+
+// tray correction reminder
+@property (nonatomic, retain) IBOutlet NSTextField *vertical_number;
+@property (nonatomic, retain) IBOutlet NSTextField *horizontal_number;
+@property (nonatomic, retain) IBOutlet NSString    *save_tray;
+@property (nonatomic, retain) IBOutlet NSTextField *rotating_number;
+
 // IBAction to triger functions
 - (IBAction)sliderAperture:(id)sender;
 - (IBAction)sliderExposure:(id)sender;
@@ -174,6 +187,7 @@
 - (IBAction)HDRmode:(id)sender;
 - (IBAction)cameraValueChanged:(id)sender;
 - (IBAction)moreCameraValue:(id)sender;
+- (IBAction)saveTrayValue:(NSString *)code;
 
 //Focus Area Controller - change foucs point
 @property (nonatomic, retain) IBOutlet NSButton *btFocusCentre;
@@ -196,10 +210,8 @@
 - (IBAction)focusBottomRight:(id)sender;
 - (IBAction)focusBottomLeft:(id)sender;
 
-
 //preferences
 - (IBAction)openPreferences:(id)sender;
-
 
 // USB device callback function
 static void Handle_DeviceMatchingCallback(void *inContext,

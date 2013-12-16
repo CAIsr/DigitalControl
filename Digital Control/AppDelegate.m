@@ -29,6 +29,8 @@
 @synthesize systemLog, ejectButton,keyDownCapture;
 //button for focus area action
 @synthesize btFocusCentre,btFocusCentreRight,btFocusCentreLeft,btFocusTop,btFocusTopRight,btFocusTopLeft,btFocusBottom,btFocusBottomRight,btFocusBottomLeft;
+//tray value
+@synthesize vertical_number, horizontal_number, save_tray, rotating_number;
 
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification
 {       
@@ -480,6 +482,7 @@ void setFullPathInfo(NSMutableArray *fullpathInfo, NSString *fullMessage, NSStri
         app.fullLiveViewData = fullLiveData;
         [app initAllValueFromCamera];
         [app lookForResponse:systemLogText:code];
+        //[app saveTrayValue:code];
     }
 }
 
@@ -667,10 +670,28 @@ void setAllCameraValue(NSString *comCom, NSString *comName, NSString *comValue, 
     [self focusPointImageTrigger: btFocusBottomLeft :@"Bottom-Left"];
 }
 
+
+- (IBAction)saveTrayValue:(NSString *)code{
+    int v_number, h_number, f_number;
+    int final_number = 1;
+    
+    v_number = [[vertical_number stringValue] intValue];
+    h_number = [[horizontal_number stringValue] intValue];
+    f_number = v_number * h_number;
+    save_tray = [NSString stringWithFormat:@"%d", f_number];
+    if([code isEqualToString:@"16"]){
+        if (final_number > v_number) {
+            final_number = 1;
+        }
+        [rotating_number setIntValue:final_number];
+        final_number ++;
+    }
+}
+
 -(void)getUSBlistener{
-   
     USBDetection *detected = [[USBDetection alloc]init];
     [detected initUsbNotification];
     [[detected returnValue]intValue];    
 }
+
 @end
